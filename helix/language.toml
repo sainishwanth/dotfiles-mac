@@ -1,0 +1,6 @@
+[[language]]
+name = "python"
+auto-format = false
+indent = 4
+language-server = { command = "pyright" }
+grammar = "python"

@@ -5,14 +5,17 @@ sketchybar --add       event           spotify_change $SPOTIFY_EVENT        \
            --add       item            spotify.anchor center                \
            --set       spotify.anchor  script="$PLUGIN_DIR/spotify.sh"      \
                                        click_script="$POPUP_SCRIPT"         \
+                                       background.padding_left=22           \
                                        popup.horizontal=on                  \
                                        popup.align=center                   \
                                        popup.height=120                     \
+																			 popup.background.color="$BLACK"     \
+																			 popup.corner_radius=20              \
                                        icon=􁁒                               \
-                                       icon.font="$FONT:Regular:25.0"       \
+                                       icon.font="$SF Pro:Regular:25.0"       \
+                                       icon.drawing=off                     \
                                        label.drawing=off                    \
                                        drawing=off                          \
-                                       y_offset=2                           \
            --subscribe spotify.anchor  mouse.entered mouse.exited           \
                                        mouse.exited.global                  \
                                                                             \
