@@ -1,17 +1,29 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export PATH=~/.emacs.d/bin:$PATH
+export PATH=~/doom-emacs/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-alias python=python3
-alias neo=neofetch
+alias ls='exa'
+alias python='python3'
+alias neo='neofetch'
+alias lf='ranger'
+alias mail='neomutt'
+alias vim='nvim'
+alias tattach='tmux attach-session -t'
+alias tkillp='tmux kill-pane'
+alias tkillw='tmux kill-window'
+alias tkills='tmux kill-session -t'
+alias qtb='qutebrowser --qt-flag ignore-gpu-blacklist --qt-flag enable-gpu-rasterization --qt-flag enable-native-gpu-memory-buffers --qt-flag num-raster-threads=4'
+alias emacsc='emacs --daemon && emacsclient -n -c -a emacs'
+alias ls='exa'
+alias brew ='/opt/homebrew/bin/brew'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gozilla" # set by `omz`
+ZSH_THEME="robbyrussell" # set by `omz`
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,7 +85,13 @@ ZSH_THEME="gozilla" # set by `omz`
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git
+         zsh-autosuggestions
+         zsh-history-substring-search
+         zsh-syntax-highlighting      
+)
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='1'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,7 +123,6 @@ source $ZSH/oh-my-zsh.sh
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 eval "$(rbenv init -)"
 export PATH=$PATH:/Users/sainishwanth/.spicetify
-
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
@@ -125,4 +142,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-source /Users/sainishwanth/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/opt/homebrew/opt/libiconv/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+set rtp+=/opt/homebrew/opt/fzf
+export PATH="/usr/local/sbin:$PATH"
