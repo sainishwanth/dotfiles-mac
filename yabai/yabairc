@@ -40,6 +40,10 @@ yabai -m config mouse_drop_action            swap
 # Ignore Apps
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^calibre$" manage=off
 
 # general space settings
 yabai -m config layout                       bsp
