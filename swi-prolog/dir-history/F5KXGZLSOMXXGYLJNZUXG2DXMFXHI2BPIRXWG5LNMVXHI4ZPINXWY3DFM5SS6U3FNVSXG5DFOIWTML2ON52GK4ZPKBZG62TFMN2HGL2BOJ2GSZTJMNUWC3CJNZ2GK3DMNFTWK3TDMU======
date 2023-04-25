@@ -1,0 +1,8 @@
+_HiStOrY_V2_
+consult('medical.pl').
+main.
+main\012fever\012,\012cough,.
+main\012cough.
+cough,\012fever,.
+cough,\012fever,\012fatigure.
+main.
