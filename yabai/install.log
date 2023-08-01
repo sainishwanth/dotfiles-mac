@@ -1,0 +1,8 @@
+[22:20:26 2023-05-01] FETCHING Version 2.17.2
+[22:20:26 2023-05-01] DOWNLOADING https://github.com/spicetify/spicetify-cli/releases/download/v2.17.2/spicetify-2.17.2-darwin-arm64.tar.gz
+[22:20:32 2023-05-01] EXTRACTING /Users/sainishwanth/.spicetify/spicetify.tar.gz
+[22:20:32 2023-05-01] SETTING EXECUTABLE PERMISSIONS TO /Users/sainishwanth/.spicetify/spicetify
+[22:20:32 2023-05-01] REMOVING /Users/sainishwanth/.spicetify/spicetify.tar.gz
+[22:20:32 2023-05-01] spicetify path already set in /Users/sainishwanth/.config/fish/config.fish, continuing...
+[22:20:32 2023-05-01] spicetify v2.17.2 was installed successfully to /Users/sainishwanth/.spicetify
+[22:20:32 2023-05-01] Run 'spicetify --help' to get started
